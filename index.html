@@ -21,6 +21,10 @@
             line-height: 1.7;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         header {
             background: linear-gradient(to right, #1e3a8a, #2563eb);
             color: white;
@@ -233,6 +237,147 @@
             align-items: center;
             gap: 0.5rem;
         }
+
+        /* New styles for navigation and pages */
+        .navbar {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: #1f2937;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            background: #2563eb;
+            color: white;
+        }
+
+        .main-container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .page {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+        }
+
+        .key-questions {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .key-questions h2 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .key-questions p {
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+        }
+
+        .key-questions ul {
+            margin-left: 1.5rem;
+            color: #5a6c7d;
+        }
+
+        .key-questions li {
+            margin-bottom: 0.5rem;
+        }
+
+        .key-questions strong {
+            color: #34495e;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Back to Top Button Styles */
+        #back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            font-size: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 200;
+            transition: background 0.2s;
+        }
+
+        #back-to-top:hover {
+            background: #1e3a8a;
+        }
     </style>
 </head>
 
@@ -242,15 +387,69 @@
         <p>A strategic roadmap to elevate engineering capability and business outcomes at Avidity Group Ltd.</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#discovery" class="active">Discovery</a></li>
-            <li><a href="#strategy">Strategy</a></li>
-            <li><a href="#execution">Execution</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Avidity Group Ltd</div>
+            <ul class="nav-menu">
+                <li><a href="#welcome" class="nav-link">Welcome</a></li>
+                <li><a href="#discovery" class="nav-link">Discovery</a></li>
+                <li><a href="#strategy" class="nav-link">Strategy</a></li>
+                <li><a href="#execution" class="nav-link">Execution</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
+    <div class="main-container">
+        <section id="welcome">
+            <div class="page-header">
+                <h2 class="page-title">Welcome</h2>
+                <p class="page-subtitle">Leadership Vision and Approach</p>
+            </div>
+            <div class="key-questions">
+                <h2 style="margin-bottom: 1rem; color: #2c3e50;">Personal Introduction</h2>
+                <p style="margin-bottom: 1.5rem; color: #7f8c8d;">
+                    I bring a hands-on, collaborative leadership style rooted in technical credibility and continuous
+                    improvement. My goal is to build a high-performing engineering team that blends modern best
+                    practices with Avidity’s strong commercial acumen. I thrive at the intersection of systems, people,
+                    and purpose — and believe that engineering should be a strategic enabler of business success.
+                </p>
+                <h2 style="margin-bottom: 1rem; color: #2c3e50;">Stakeholder Engagement Plan</h2>
+                <ul style="margin-left: 1rem; color: #5a6c7d;">
+                    <li><strong>Week 1:</strong> Introductory 1:1s with engineering team, CIO, and cross-functional
+                        leaders (Product, Field Ops)</li>
+                    <li><strong>Week 2–4:</strong> Shadowing field team briefings, system overviews with DevOps/Data/CRM
+                        teams</li>
+                    <li><strong>Ongoing:</strong> Bi-weekly updates to CIO, monthly review with CEO and executive board,
+                        open office hours for engineers</li>
+                </ul>
+                <h2 style="margin-top: 2rem; margin-bottom: 1rem; color: #2c3e50;">Tooling & Governance Practices</h2>
+                <p style="color: #7f8c8d;">
+                    As part of a secure and scalable engineering ecosystem, I intend to promote the use of:
+                </p>
+                <ul style="margin-left: 1rem; color: #5a6c7d;">
+                    <li>✅ <strong>Dependabot</strong> and <strong>Snyk</strong> for dependency and vulnerability
+                        management</li>
+                    <li>✅ <strong>Sentry</strong> and <strong>Application Insights</strong> for real-time monitoring and
+                        alerting</li>
+                    <li>✅ <strong>AI-assisted testing and linting</strong> to improve speed, quality, and consistency
+                    </li>
+                    <li>✅ <strong>Standardized GitHub Actions YAML templates</strong> to ensure consistent CI/CD
+                        pipelines</li>
+                    <li>✅ <strong>Azure Policy and Blueprints</strong> to enforce regulatory compliance and governance
+                        by design</li>
+                    <li>✅ <strong>Cost and resource auditing tools</strong> in Azure to track, report, and optimize
+                        infrastructure usage</li>
+                    <li>✅ <strong>Infrastructure as Code (IaC)</strong> practices to version, standardize, and scale
+                        environments</li>
+                </ul>
+                <h2 style="margin-top: 2rem; margin-bottom: 1rem; color: #2c3e50;">Living Document Commitment</h2>
+                <p style="color: #7f8c8d;">
+                    This 90-day plan is a living framework, designed to adapt based on team insights, stakeholder
+                    feedback, and emerging priorities. I will listen first, act quickly, and iterate with transparency
+                    and intent.
+                </p>
+            </div>
+        </section>
         <section id="discovery">
             <div class="section-header">
                 <h2>Discovery</h2>
@@ -414,7 +613,6 @@
                 </div>
             </div>
         </section>
-
         <section id="strategy">
             <div class="section-header">
                 <h2>Strategy</h2>
@@ -616,7 +814,6 @@
                 </div>
             </div>
         </section>
-
         <section id="execution">
             <div class="section-header">
                 <h2>Execution</h2>
@@ -834,8 +1031,9 @@
                 </div>
             </div>
         </section>
-    </main>
+    </div>
 
+    <button id="back-to-top" title="Back to Top" aria-label="Back to Top">&#8679;</button>
     <footer>
         &copy; 2025 Head of Engineering - Avidity Group Ltd. Strategic Plan
     </footer>
@@ -855,6 +1053,18 @@
                     item.classList.toggle('active');
                 });
             });
+        });
+        // Show/hide Back to Top button
+        window.addEventListener('scroll', function () {
+            const btn = document.getElementById('back-to-top');
+            if (window.scrollY > 300) {
+                btn.style.display = 'flex';
+            } else {
+                btn.style.display = 'none';
+            }
+        });
+        document.getElementById('back-to-top').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>
