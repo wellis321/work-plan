@@ -1,0 +1,93 @@
+For an organization like Avidity, which operates in the fast-paced world of retail sales, marketing, and field activation, here’s what they are most likely using or combining today:
+
+💼 Likely demand forecasting systems or tools at Avidity
+✅ NielsenIQ or IRI (Circana) solutions
+
+Because Avidity works with top FMCG brands (like Unilever, Nespresso, Rimmel), they probably license retail panel data and forecasting tools from NielsenIQ or IRI.
+
+These platforms help with:
+
+multi-channel demand forecasts
+
+promotional impact modeling
+
+competitor benchmarks
+
+✅ RELEX Solutions or Blue Yonder (JDA Software)
+
+For retail execution, merchandising, and demand prediction across thousands of SKUs and stores.
+
+These systems handle replenishment planning and can automate recommendations for the field teams Avidity deploys.
+
+✅ Power BI + custom demand models
+
+Avidity has an internal data and analytics team that almost certainly builds Power BI dashboards, possibly backed by machine learning models built with:
+
+Azure ML / AutoML (since they’re often Microsoft stack users)
+
+Python models (e.g., Prophet or Scikit-learn) integrated into reporting workflows.
+
+✅ Client-owned ERP forecasts (SAP / Oracle)
+
+Importantly, Avidity’s own systems probably consume demand forecasts provided by their brand clients’ ERP systems (like SAP IBP or Oracle Demand Management Cloud) and then use them to inform:
+
+where to send field teams
+
+how to prioritize store visits
+
+which promotions or SKUs need attention
+
+✅ Field team optimization platforms (Repsly, StayinFront, GoSpotCheck)
+
+These don’t generate demand forecasts, but they consume forecast insights and push them into the hands of reps and merchandisers.
+
+🛠 Hybrid model likely in use:
+Top-down forecasts → provided by major retailers, brands, or syndicated data providers
+
+Mid-layer refinement → Avidity’s analytics team customizes this by region, product, and client need
+
+Bottom-up execution → field team software puts recommendations into action at the shelf level
+
+⚡ Why they probably don’t use only open-source tools (like Prophet)
+Open-source tools like Prophet or Darts are great, but they require a data science team + clean data pipelines to work at enterprise scale.
+
+Avidity may experiment with these in-house, but for most clients, they lean on proven commercial solutions that integrate with retail systems.
+
+1️⃣ Client Systems (Data Sources)
+
+SAP IBP, Oracle Demand Management
+
+NielsenIQ, IRI
+
+Retailer EPOS feeds
+→ Provide raw sales, supply chain, and market data.
+
+2️⃣ Avidity Data Layer
+
+Cloud Data Warehouse (e.g., Snowflake, BigQuery)
+
+Power BI dashboards
+
+Custom ML models (demand forecasts, promotion modeling, stockout prediction)
+
+3️⃣ Forecast Refinement Layer
+
+Regional adjustments
+
+Promotional impact analysis
+
+Stockout risk assessments
+→ Tailored insights for specific stores, regions, or brands.
+
+4️⃣ Field Execution Layer
+
+Tools like Repsly, StayinFront, GoSpotCheck
+→ Push tasks and recommendations to field teams for in-store action.
+
+5️⃣ Feedback Loop
+
+Collect new EPOS data, field team reports, photos, stock checks
+→ Feed back into Avidity data layer to continuously improve models.
+
+✅ Example flow:
+Unilever → sends sales data → Avidity runs ML forecasts → field teams get promo & restock tasks → data from stores flows back → forecast improves.

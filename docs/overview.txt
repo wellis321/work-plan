@@ -1,0 +1,33 @@
+# 90-Day Plan: Head of Engineering at Avidity
+
+## Introduction
+This document outlines my proposed plan for the first 90 days as Head of Engineering at Avidity, as referenced in the job description.
+
+## Objectives
+- Build relationships across the organization
+- Map out and document all systems
+- Analyze data flow and integration points
+- Review authentication mechanisms for consistency
+- Assess use of strict typing and data schemas
+- Evaluate developer skillsets and team structure
+- Understand the deployment and release process
+- Review testing strategies and coverage
+- Assess contingency and disaster recovery plans
+
+## Immediate Priorities (First 30 Days)
+- Meet with all team members and key stakeholders
+- Begin system and data flow mapping
+- Audit authentication and security practices
+
+## 60-Day Milestones
+- Complete system documentation
+- Propose improvements for authentication and data schemas
+- Review and suggest enhancements to testing and deployment processes
+
+## 90-Day Deliverables
+- Present a comprehensive report with recommendations
+- Initiate implementation of high-priority improvements
+
+## Questions to Address
+- What needs immediate attention?
+- Where are the biggest risks and opportunities?

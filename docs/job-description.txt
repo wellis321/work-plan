@@ -1,0 +1,121 @@
+Head of Engineering
+
+Position Overview
+
+We are looking for a strategic, hands-on Head of Engineering to lead and scale our software engineering function. This senior leadership role will focus heavily on software engineering excellence across full-stack development, system design, architecture, and software delivery processes — while also overseeing our data engineering, cloud infrastructure, and security functions.
+
+You will be responsible for setting the technical direction, improving engineering velocity and quality, establishing modern practices across the SDLC, and growing a high-performing team capable of building and maintaining complex, scalable systems. You must have a proven track record of delivering enterprise-grade applications and services, with deep experience in both legacy and modern technology stacks.
+
+Key Responsibilities
+
+Software Engineering Leadership
+
+· Set and own the technical roadmap, ensuring architectural scalability, security, performance, and maintainability of all software systems.
+
+· Oversee full lifecycle software development — from requirements, technical design, development, testing, deployment, to post-release monitoring and maintenance.
+
+· Establish, enforce, and continuously evolve software engineering best practices (e.g., SOLID principles, domain-driven design, clean architecture, modular monoliths vs microservices).
+
+· Drive consistency in coding standards, code review rigor, and software craftsmanship.
+
+· Lead critical system architecture decisions, including technology stack evolution, refactoring legacy components, and designing future-state systems.
+
+· Ensure integration patterns and service contracts across internal and external APIs are robust, secure, and scalable.
+
+System Integration & Platform Ownership
+
+· Oversee integration between business systems using APIs, middleware, and ETL pipelines, including Salesforce, Power Platform (PowerApps, PowerAutomate, LogicApps), SharePoint, and custom web applications.
+
+· Lead optimization and governance around API design (RESTful services, rate limiting, versioning, monitoring, etc.).
+
+· Ensure high data consistency, operational integrity, and well-documented interface contracts between services.
+
+Software Delivery, CI/CD & DevOps
+
+· Define and implement scalable CI/CD pipelines using modern DevOps tooling, including automated build, test, deploy, and rollback strategies.
+
+· Champion continuous delivery practices with robust unit, integration, contract, and end-to-end testing frameworks.
+
+· Drive metrics around deployment frequency, lead time, change failure rate, and mean time to recovery (MTTR).
+
+· Collaborate with cloud engineers to align infrastructure strategy with software delivery needs.
+
+Cloud-Native Engineering (Azure)
+
+· Lead the development of scalable cloud-native applications and services using Microsoft Azure, including Azure Functions, LogicApps, and container-based services.
+
+· Drive cost-effective use of cloud services and performance optimization across environments.
+
+· Ensure cloud architectures support observability, fault tolerance, and high availability.
+
+Data Engineering & Intelligent Systems
+
+· Guide the engineering team in data modelling, data access patterns, and efficient use of databases (MSSQL, PostgreSQL, MySQL).
+
+· Work with data engineers to enable secure, efficient data movement between systems, including real-time and batch processing pipelines.
+
+· Support analytics and reporting needs through the engineering of clean, reliable data sources and APIs.
+
+Security Engineering & Governance
+
+· Partner with security engineers to integrate security throughout the software lifecycle (shift-left security, secure coding, threat modelling).
+
+· Own the implementation of secure authentication/authorization practices, audit logging, encryption at rest/in transit, and other application security standards.
+
+· Ensure software and infrastructure meet organizational security and compliance requirements (e.g., GDPR, ISO 27001, OWASP Top 10).
+
+Team Management & Culture
+
+· Build and scale high-performance engineering teams, including backend, frontend, full-stack, data, and security engineers.
+
+· Define and track KPIs for engineering productivity, quality, and performance.
+
+· Promote an engineering culture grounded in ownership, collaboration, innovation, and continuous learning.
+
+· Provide technical mentoring and career growth paths for engineers at all levels.
+
+Qualifications
+
+Education
+
+· Bachelor’s or Master’s degree in Computer Science, Software Engineering, or equivalent practical experience.
+
+Experience
+
+· 8+ years of software engineering experience with 3+ years in an engineering leadership role.
+
+· Proven experience designing and delivering complex, scalable, multi-tier web applications.
+
+· Strong history of transforming monoliths to modular or microservice architectures.
+
+· Hands-on experience with modern CI/CD pipelines, test automation, and infrastructure-as-code.
+
+· Experience managing and integrating with third-party systems and platforms such as Salesforce, Azure, SharePoint, and Power Platform.
+
+· Experience working with secure, data-driven applications and distributed systems.
+
+Technical Skills
+
+· Frontend: HTML, CSS, JavaScript (Node.js, browser frameworks)
+
+· Backend: PHP (Symfony, Smarty), C# (.NET Core), Azure Functions (Node.js / PowerShell), PowerShell
+
+· Database: MSSQL, PostgreSQL (including JSON), MySQL/MariaDB
+
+· Integration: REST APIs, ETL, Azure Data Factory
+
+· DevOps/Infra: CI/CD pipelines (e.g., GitHub Actions, Azure DevOps), containerization, Azure PaaS
+
+· Security: Secure development lifecycle, OWASP, authentication/authorization protocols
+
+Leadership Attributes
+
+· Technically credible leader with the ability to deep-dive on architecture and code when necessary.
+
+· Strong decision-making skills backed by analytical rigor and a data-driven mindset.
+
+· Passionate about growing talent and building healthy, inclusive engineering teams.
+
+· Adept at working across stakeholders in product, business, security, and operations to deliver cross-functional value.
+
+· Highly effective communicator and change agent capable of aligning engineering initiatives with business strategy.

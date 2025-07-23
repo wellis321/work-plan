@@ -1,0 +1,86 @@
+🌐 Likely systems landscape at Avidity
+✅ Core platforms
+
+CRM systems for client relationships (Salesforce or Dynamics)
+
+Field service management tools (Repsly, StayinFront, GoSpotCheck)
+
+Project management tools (Asana, Jira, or Trello)
+
+Finance & HR systems (Sage, Workday, or similar)
+
+Marketing ops platforms (for campaign tracking)
+
+✅ Data ecosystem
+
+EPOS data from retailers
+
+Syndicated data (NielsenIQ, IRI)
+
+Internal sales + performance data
+
+Power BI dashboards for clients + internal teams
+
+✅ Infrastructure
+
+Likely hybrid cloud/on-prem setup
+
+Mix of legacy systems (especially in finance or HR) + modern cloud SaaS tools
+
+Fragmented data silos across agencies (McCurrach, Standout, Wave, Thumbprint, Zing)
+
+✅ People + processes
+
+Heavy reliance on human expertise in field ops
+
+Analytics teams using a mix of Excel, Power BI, and some SQL or Python
+
+IT teams managing operational stability, security, and integrations
+
+⚠ Challenges you’d face as a systems manager/adviser
+1️⃣ Data silos + integration gaps
+
+Systems between agencies may not talk smoothly to each other.
+
+Client → Avidity → field teams → feedback loops are often fragmented.
+Your challenge: Design a unified data architecture + integration strategy.
+
+2️⃣ Legacy tech debt
+
+Old systems that “just work” but are brittle and costly.
+
+Migration projects will meet internal resistance (“why change?”).
+Your challenge: Prioritize modernization without breaking mission-critical ops.
+
+3️⃣ Low AI + automation maturity
+
+Lots of data, not enough automation or machine learning.
+
+Manual reporting, Excel jockeying, and heavy analyst time.
+Your challenge: Introduce automation + AI in stages, with clear ROI.
+
+4️⃣ Change management + culture
+
+Teams are likely comfortable in their current tools + processes.
+
+Field teams and managers may distrust “black box” AI or dashboards.
+Your challenge: Lead change with transparency, training, and by showing small wins.
+
+5️⃣ Client-specific demands + complexity
+
+Every big client has unique systems, data needs, and reporting expectations.
+Your challenge: Build flexible, modular systems that can adapt to each client without reinventing the wheel.
+
+6️⃣ Cybersecurity + compliance
+
+With lots of retailer and consumer data, Avidity is a tempting target.
+
+GDPR and data privacy regulations are critical.
+Your challenge: Ensure compliance, risk management, and secure architectures.
+
+💥 What success would look like
+✅ Unified data platform across agencies
+✅ Automated insights + AI-assisted workflows
+✅ Strong integration between client data, Avidity systems, and field teams
+✅ Clear governance, documentation, and training
+✅ A culture that values experimentation, innovation, and learning
