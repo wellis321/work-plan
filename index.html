@@ -369,601 +369,829 @@
         <section id="strategy">
             <div class="section-header">
                 <h2>Strategy</h2>
-                <p><strong>Purpose:</strong> Design the future state, set direction, and plan improvements for
-                    engineering and systems.</p>
-            </div>
-            <!-- Place all relevant Engineering Leadership accordion items here -->
-            <div class="accordion">
-                <!-- Software Engineering Excellence -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Software Engineering Excellence</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>Technical Roadmap: Develop a comprehensive technical roadmap that balances immediate
-                                business needs with long-term architectural goals, focusing on the modernisation of
-                                legacy systems.</li>
-                            <li>Engineering Best Practices: Implement SOLID principles, domain-driven design, and clean
-                                architecture practices across all new development while gradually refactoring legacy
-                                code.</li>
-                            <li>Code Quality: Establish automated code quality gates, comprehensive code reviews, and
-                                pair programming sessions to ensure consistent quality standards.</li>
-                            <li>Architecture Governance: Create an architecture review board for critical system
-                                decisions, ensuring alignment with business strategy and technical standards.</li>
-                            <li>Dependency Management: Leverage GitHub's Dependabot and similar tools to automate
-                                dependency updates, ensuring security patches are applied promptly and reducing
-                                technical debt.</li>
-                            <li>Comprehensive Testing Strategy: Implement multi-layered testing including unit,
-                                integration, end-to-end, performance, security, and chaos engineering.</li>
-
-                            <li>Developer Experience: Create efficient development environments and tooling that reduce
-                                friction and accelerate delivery while maintaining quality standards.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- System Integration & Platform Strategy -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>System Integration & Platform Strategy</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>API Strategy: Develop a comprehensive API strategy with standardised patterns for
-                                RESTful services, including versioning, documentation, and monitoring.</li>
-                            <li>Salesforce & Power Platform Integration: Create robust integration patterns between
-                                custom applications and Avidity's Salesforce, SharePoint, and Power Platform
-                                implementations.</li>
-                            <li>Service Contracts: Implement formal service contracts and API governance to ensure
-                                consistency and reliability across all integrations.</li>
-                            <li>Data Consistency: Establish data standardisation patterns and conflict resolution
-                                strategies to maintain consistency across distributed systems.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- DevOps & Delivery Excellence -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>DevOps & Delivery Excellence</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>CI/CD Implementation: Build modern CI/CD pipelines using GitHub Actions and Azure DevOps
-                                with comprehensive automated testing.</li>
-                            <li>Deployment Automation: Implement zero-downtime deployments, automated rollback
-                                capabilities, and deployment approval workflows.</li>
-                            <li>Performance Metrics: Track and improve key metrics including deployment frequency, lead
-                                time, change failure rate, and MTTR.</li>
-                            <li>Environment Strategy: Establish consistent dev/test/staging/production environments with
-                                infrastructure-as-code for reproducibility.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Environment Strategy & Infrastructure -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Environment Strategy & Infrastructure</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>Environment Standardisation: Implement clearly defined, consistent environments with
-                                specific purposes (local, dev, QA, staging, production).</li>
-                            <li>Specialised Environments: Purpose-built environments for AI/ML, data science, and
-                                security testing.</li>
-                            <li>Environment Parity: Ensure consistency across environments through IaC,
-                                configuration-as-code, and container orchestration.</li>
-                            <li>Environment Governance: Implement controls for environment management, access, cost, and
-                                compliance.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Azure Cloud-Native Architecture -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Azure Cloud-Native Architecture</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>Cloud Migration: Lead the migration from on-premises or legacy hosting to Azure PaaS
-                                services using a phased approach.</li>
-                            <li>Serverless Architecture: Implement Azure Functions and Logic Apps for event-driven
-                                processing of EPOS data and field reports.</li>
-                            <li>Containerisation: Adopt container-based deployments for consistent environments and
-                                efficient resource utilisation.</li>
-                            <li>Cost optimisation: Implement cloud cost monitoring and optimisation strategies,
-                                including auto-scaling and right-sizing of resources.</li>
-                            <li>Azure Resource Manager Templates: Standardise infrastructure deployment using ARM
-                                templates for consistent, repeatable environment creation.</li>
-                            <li>Azure Policy: Implement governance guardrails with custom and built-in policies to
-                                enforce organisational standards and compliance requirements.</li>
-                            <li>Azure Cost Management: Utilise Cost Analysis tools to monitor spending patterns,
-                                implement budget alerts, and optimise resource allocation across environments.</li>
-                            <li>Azure Monitor & Application Insights: Deploy comprehensive monitoring for infrastructure
-                                health, application performance, and user experience metrics.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Azure Governance & Cost Management -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Azure Governance & Cost Management</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>Azure Blueprints: Create standardised environment templates that combine Resource
-                                Manager templates, role assignments, and policy assignments for consistent deployment
-                                across subscriptions.</li>
-                            <li>Management Groups: Implement a hierarchical structure for organising subscriptions and
-                                applying governance controls at scale across the organisation.</li>
-                            <li>Azure Policy as Code: Manage policies through version-controlled configuration files,
-                                enabling automated policy deployment and compliance reporting.</li>
-                            <li>Resource Tagging Strategy: Develop a comprehensive tagging taxonomy for cost allocation,
-                                ownership tracking, and environment classification.</li>
-                            <li>Cost optimisation Framework: Implement a structured approach to cost management
-                                including reserved instances, auto-shutdown, right-sizing, and anomaly detection.</li>
-                            <li>Azure Advisor: Leverage recommendations for high availability, security, performance,
-                                and cost optimisation across all Azure resources.</li>
-                            <li>Governance Dashboards: Create custom Power BI dashboards for compliance status, cost
-                                trends, and resource utilisation across the organisation.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Data Engineering & Intelligence -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Data Engineering & Intelligence</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>Data Standardisation: Implement common data formats, schemas, and taxonomies across all
-                                agencies to ensure consistency and interoperability.</li>
-                            <li>Database Strategy: Optimise database usage across MSSQL, PostgreSQL, and MySQL/MariaDB
-                                for efficient data storage, retrieval, and analysis.</li>
-                            <li>Data Pipelines: Implement efficient ETL processes using Azure Data Factory for EPOS data
-                                integration and analysis.</li>
-                            <li>Real-time Analytics: Build real-time data processing capabilities for immediate insights
-                                from field operations and sales data.</li>
-                            <li>Machine Learning: Develop predictive models for sales forecasting, inventory
-                                optimisation, and customer behavior analysis.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Security & Governance -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Security & Governance</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>Secure SDLC: Implement security throughout the development lifecycle, including threat
-                                modeling and security code reviews.</li>
-                            <li>Authentication & Authorisation: Standardise on modern authentication protocols and
-                                implement proper role-based access control across all systems.</li>
-                            <li>Compliance: Ensure all systems meet GDPR, ISO 27001, and industry-specific compliance
-                                requirements.</li>
-                            <li>Security Automation: Implement automated security scanning in CI/CD pipelines and
-                                regular vulnerability assessments.</li>
-                            <li>Azure Key Vault: Centralise secret management using Azure Key Vault for secure storage
-                                of API keys, certificates, and connection strings.</li>
-                            <li>Azure Security Center: Deploy advanced threat protection with Security Center for
-                                continuous security assessment and actionable recommendations.</li>
-                            <li>Azure Sentinel: Implement SIEM capabilities for security information and event
-                                management across all Avidity systems.</li>
-                            <li>Azure Private Link: Secure data transfers with private endpoints to eliminate data
-                                exposure on the public internet.</li>
-                            <li>Azure Information Protection: Implement data classification and protection policies to
-                                secure sensitive information across the organisation.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="execution">
-            <div class="section-header">
-                <h2>Execution</h2>
-                <p><strong>Purpose:</strong> Deliver improvements, measure results, and embed new practices for
-                    sustainable success.</p>
-            </div>
-            <!-- Execution phase accordion and content -->
-            <div class="accordion">
-                <!-- Engineering Team Development -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Engineering Team Development</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>Team Structure: Organise engineering teams around business domains and technical
-                                capabilities to maximize autonomy and ownership.</li>
-                            <li>Skills Development: Create a comprehensive training program covering both legacy systems
-                                and modern technologies.</li>
-                            <li>Career Progression: Establish clear engineering career paths with defined competencies
-                                and growth opportunities.</li>
-                            <li>Engineering Culture: Foster a culture of innovation, continuous learning, and technical
-                                excellence through hackathons, knowledge sharing sessions, and communities of practice.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- People Leadership & Team Culture -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>People Leadership & Team Culture</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>Talent Development: Implement personalised growth plans for each team member, focusing
-                                on both technical skills and leadership capabilities.</li>
-                            <li>Inclusive Team Building: Create a diverse and inclusive engineering culture where
-                                different perspectives are valued and everyone feels empowered to contribute.</li>
-                            <li>Mentorship Program: Establish formal mentoring relationships between senior and junior
-                                engineers to accelerate knowledge transfer and professional development.</li>
-                            <li>Psychological Safety: Foster an environment where team members feel safe to take risks,
-                                share ideas, and learn from failures without fear of criticism.</li>
-                            <li>Recognition & Feedback: Implement regular feedback cycles and meaningful recognition
-                                systems to celebrate achievements and support continuous improvement.</li>
-                            <li>Work-Life Balance: Promote sustainable working practices that prevent burnout and
-                                support long-term wellbeing and productivity.</li>
-                            <li>External Networking & Community Engagement: Develop strong external connections to
-                                benefit the team and Organisation (conferences, universities, open source, etc.).</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Communication & Change Management -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Communication & Change Management</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>Stakeholder Engagement: Build strong relationships across product, business, security,
-                                and operations teams to ensure alignment and buy-in for engineering initiatives.</li>
-                            <li>Technical Translation: Effectively communicate complex technical concepts to
-                                non-technical stakeholders, translating engineering work into business value.</li>
-                            <li>Change Leadership: Guide teams through technological transitions with clear vision,
-                                empathy, and practical support.</li>
-                            <li>Transparent Communication: Maintain open and honest communication about project status,
-                                challenges, and decisions to build trust across the Organisation.</li>
-                            <li>Cross-functional Collaboration: Facilitate productive partnerships between engineering
-                                and other departments to deliver integrated solutions that meet business needs.</li>
-                            <li>Executive Reporting: Provide clear, concise updates to senior leadership that highlight
-                                progress, risks, and strategic opportunities.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Modern Practices & Tools</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li>Promote high standards of pair programming, test-driven development, and knowledge
-                                sharing.</li>
-                            <li>Foster a curious, supportive environment for open discussion and continuous improvement.
-                            </li>
-                            <li>Introduce modern AI tools and platforms such as Claude, GitHub Copilot, Cursor, MCP
-                                servers, n8n, Goose, Power Automate, and Ollama (local LLMs).</li>
-                            <li>Encourage learning about Retrieval-Augmented Generation (RAG) and other cutting-edge
-                                technologies.</li>
-                            <li>Establish an online shared space for uploading, discussing, and learning from
-                                interesting content as a team.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Benchmarks & Compliance Standards</h3>
-                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li><strong>Accessibility:</strong> Meet or exceed WCAG 2.1/2.2 standards for digital
-                                accessibility.</li>
-                            <li><strong>GDPR & Data Privacy:</strong> Ensure all systems and processes are compliant
-                                with GDPR and other relevant data protection laws.</li>
-                            <li><strong>Security Compliance:</strong> Adhere to ISO 27001, SOC 2, and OWASP Top 10 best
-                                practices.</li>
-                            <li><strong>Code Quality:</strong> Maintain high standards for code review, static analysis,
-                                and automated test coverage.</li>
-                            <li><strong>Performance:</strong> Track and improve system performance, uptime, and response
-                                times.</li>
-                            <li><strong>DevOps Maturity:</strong> Monitor deployment frequency, lead time, change
-                                failure rate, and MTTR.</li>
-                            <li><strong>Documentation:</strong> Keep technical and process documentation current and
-                                accessible.</li>
-                            <li><strong>Sustainability:</strong> Consider energy efficiency and green IT practices in
-                                system design and operations.</li>
-                            <li><strong>Diversity & Inclusion:</strong> Foster a diverse, inclusive, and equitable
-                                engineering culture.</li>
-                            <li><strong>User Satisfaction:</strong> Track user feedback, NPS, and support metrics to
-                                drive continuous improvement.</li>
-                        </ul>
-                        <p>
-                            <em>These benchmarks will be regularly assessed and used to drive continuous improvement
-                                across the organisation.</em>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Leadership Attributes and Technical Skills Alignment -->
-
-
-            <!-- System Mapping Preview (available later) -->
-            <div style="margin-top:2rem;">
                 <p>
-                    <strong>Preview:</strong> As an example, see how <a
-                        href="https://wellis321.github.io/org-playbook/systems/identity" target="_blank"
-                        rel="noopener">Identity Management</a> is documented—Avidity’s systems will be mapped and
-                    documented in a similar, transparent, and actionable way as the work progresses.
+                    <strong>Purpose:</strong> Define the future state, set direction, and plan improvements for
+                    engineering and systems. The Strategy phase (Days 30–60) is focused on translating insights from
+                    Discovery into actionable plans. This includes designing target architectures, prioritising
+                    initiatives, aligning with business goals, and ensuring the team is set up for sustainable success.
+                    Collaboration with stakeholders and clear communication are key as we move from understanding to
+                    execution.
                 </p>
             </div>
-        </section>
+            <!-- Place all relevant Engineering Leadership accordion items here -->
+            <section id="team-stakeholder-development">
+                <div class="section-header">
+                    <h3>Team & Stakeholder Development</h3>
+                    <p>
+                        Building a high-performing, collaborative, and resilient engineering team is central to our
+                        strategy. This phase focuses on developing people, fostering a strong culture, and ensuring
+                        effective communication and engagement with all stakeholders.
+                    </p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>People Leadership & Team Culture</h3>
+                        <ul>
+                            <li>Talent development and personalised growth plans</li>
+                            <li>Inclusive team building</li>
+                            <li>Strengths based approach</li>
 
-        <section id="standards-improvements">
-            <div class="page-header">
-                <h2 class="page-title">Easy to Implement Standards and Improvements</h2>
+                            <li>External networking and community engagement</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Engineering Team Development</h3>
+                        <ul>
+                            <li>Organise teams around business domains and technical capabilities</li>
+                            <li>Comprehensive training and career progression</li>
+                            <li>Foster a culture of innovation and continuous learning</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Communication & Change Management</h3>
+                        <ul>
+                            <li>Stakeholder engagement and cross-functional collaboration</li>
+                            <li>Clear technical translation and executive reporting</li>
+                            <li>Transparent communication and change leadership</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="source-code-environment">
+                <div class="section-header">
+                    <h3>Source Code & Coding Environment</h3>
+                    <p>
+                        A robust, well-documented codebase and a productive development environment are essential for
+                        engineering excellence. This phase focuses on improving code quality, streamlining workflows,
+                        and ensuring every engineer has the tools and context they need to succeed.
+                    </p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Codebase Quality & Standards</h3>
+                        <ul>
+                            <li>Adopt and enforce consistent code style and review standards</li>
+                            <li>Refactor legacy code for maintainability and clarity</li>
+                            <li>Increase automated test coverage and static analysis</li>
+
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Development Environment</h3>
+                        <ul>
+                            <li>Standardise local development setup</li>
+                            <li>Automate environment provisioning (e.g., with containers or scripts)</li>
+                            <li>Integrate modern tools for debugging, testing, and code navigation</li>
+                            <li>Continuously improve developer experience based on feedback</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Collaboration & Knowledge Sharing</h3>
+                        <ul>
+                            <li>Promote pair programming and code review best practices</li>
+                            <li>Maintain shared documentation and internal wikis</li>
+                            <li>Host regular knowledge-sharing sessions and tech talks</li>
+                            <li>Encourage contributions to shared libraries and tooling</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+            </section>
+            <section id="meeting-org-needs" class="highlight-section">
+                <div class="section-header">
+                    <h3>Meeting Organisational Needs</h3>
+                    <p>
+                        To ensure I'm delivering maximum value, Ill proactively engage with stakeholders
+                        across the organisation to discover their needs and priorities. Through interviews, workshops,
+                        and feedback sessions, I’ll identify what the business requires. I'll then
+                        develop and iterate on report templates and solutions that are tailored to these needs, ensuring
+                        outputs are actionable, relevant, and drive business outcomes.
+                    </p>
+                </div>
+            </section>
+            <section id="standardising-automating">
+                <div class="section-header">
+                    <h3>Standardising & Automating</h3>
+                    <p>
+                        As part of my ongoing plan, I will focus on standardising and automating engineering practices
+                        to drive consistency, quality, and efficiency. I’ll explore and implement resources available in
+                        Azure, GitHub, and other platforms—such as policies, templates, and automation tools—to ensure
+                        best practices are embedded across the team.
+                    </p>
+                    <p>
+                        There are many other resources and tools available; the examples here are just a representative
+                        snippet of what can be leveraged to support our engineering goals.
+                    </p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Azure & Cloud Governance</h3>
+                        <ul>
+                            <li>Adopt Azure Policy and Blueprints to enforce regulatory compliance and governance by
+                                design</li>
+                            <li>Utilise cost and resource auditing tools in Azure to track, report, and optimise
+                                infrastructure usage</li>
+                            <li>Implement Infrastructure as Code (IaC) for consistent, scalable environments</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>GitHub & Code Automation</h3>
+                        <ul>
+                            <li>Standardise GitHub Actions YAML templates for consistent CI/CD pipelines</li>
+                            <li>Use Dependabot and Snyk for dependency and vulnerability management</li>
+                            <li>Adopt AI-assisted testing and linting to improve speed, quality, and consistency</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="margin-top:1.5rem;">
+                    I will continue to learn and adapt these tools and practices, ensuring they are tailored to our
+                    team’s needs and embedded as part of our engineering culture.
+                </p>
+            </section>
+            <section id="good-working-practices">
+                <div class="section-header">
+                    <h3>Good Working Practices</h3>
+                    <p>
+                        Adopting and maintaining high standards in engineering practices is essential for quality,
+                        reliability, and team growth. These practices ensure our work is efficient, collaborative, and
+                        continuously improving.
+                    </p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Code Quality & Best Practices</h3>
+                        <ul>
+                            <li>Automated code quality gates and static analysis</li>
+                            <li>Comprehensive code reviews and pair programming</li>
+                            <li>Adopt SOLID principles, domain-driven design, and clean architecture</li>
+                            <li>Maintain up-to-date technical and process documentation</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>DevOps & Automation</h3>
+                        <ul>
+                            <li>Modern CI/CD pipelines with automated testing</li>
+                            <li>Zero-downtime deployments and automated rollbacks</li>
+                            <li>Monitor deployment frequency, lead time, and failure rates</li>
+                            <li>Track and improve system performance and uptime</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Collaboration & Continuous Improvement</h3>
+                        <ul>
+                            <li>Promote knowledge sharing and open discussion</li>
+                            <li>Foster a supportive, curious team environment</li>
+                            <li>Adopt modern tools (AI assistants, automation platforms, etc.)</li>
+                            <li>Encourage learning about new technologies and best practices</li>
+                            <li>Maintain shared spaces for team learning and resources</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="card-grid" style="margin-top: 2rem;">
+                <div class="card">
+                    <h3>Development Environments</h3>
+                    <ul>
+                        <li>Implement clearly defined, consistent environments (local, dev, QA, staging, production)
+                        </li>
+                        <li>Support specialised environments for AI/ML, data science, and security testing</li>
+                        <li>Ensure environment parity with infrastructure-as-code, config-as-code, and containers</li>
+                        <li>Establish governance for environment management, access, cost, and compliance</li>
+                    </ul>
+                </div>
             </div>
-            <ul style="margin-left: 1rem; color: #5a6c7d;">
-                <li>Use Dependabot and Snyk for dependency and vulnerability management</li>
-                <li>Set up Sentry and Application Insights for real-time monitoring and alerting</li>
-                <li>Adopt AI-assisted testing and linting to improve speed, quality, and consistency</li>
-                <li>Standardize GitHub Actions YAML templates for consistent CI/CD pipelines</li>
-                <li>Apply Azure Policy and Blueprints to enforce regulatory compliance and governance by design</li>
-                <li>Utilise cost and resource auditing tools in Azure to track, report, and optimize infrastructure
-                    usage</li>
-                <li>Implement Infrastructure as Code (IaC) practices to version, standardise, and scale environments
-                </li>
-            </ul>
-        </section>
-
-        <div class="documentation-specifications">
-            <h3>Documentation Templates & Standards</h3>
-            <p>I will create standardised templates that can be applied consistently across all of Avidity's systems and
-                agencies.</p>
-
-            <div class="template-grid">
-                <div class="template-spec">
-                    <h4>System Architecture Template</h4>
+            <div class="quick-wins-section" style="margin-top: 2rem;">
+                <h2>Quick Wins (30–60 Days)</h2>
+                <p>Targeted, high-impact improvements to accelerate progress and demonstrate value during the Strategy
+                    phase.</p>
+                <div class="wins-timeline">
+                    <div class="week">
+                        <h4>Week 5</h4>
+                        <ul>
+                            <li>Implement standardised CI/CD templates across all active projects</li>
+                            <li>Roll out initial Azure Policy and Blueprint configurations</li>
+                            <li>Begin automated dependency management with Dependabot</li>
+                        </ul>
+                    </div>
+                    <div class="week">
+                        <h4>Week 6</h4>
+                        <ul>
+                            <li>Automate key system documentation updates using templates</li>
+                            <li>Expand test coverage and static analysis in core repositories</li>
+                            <li>Launch first round of team knowledge-sharing sessions</li>
+                        </ul>
+                    </div>
+                    <div class="week">
+                        <h4>Week 7</h4>
+                        <ul>
+                            <li>Refine environment provisioning scripts for consistency</li>
+                            <li>Integrate security scanning into CI/CD pipelines</li>
+                            <li>Gather feedback on new standards and automation from the team</li>
+                        </ul>
+                    </div>
+                    <div class="week">
+                        <h4>Week 8</h4>
+                        <ul>
+                            <li>Present quick wins and lessons learned to stakeholders</li>
+                            <li>Prioritise next set of improvements for Execution phase</li>
+                            <li>Document and share best practices for ongoing adoption</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Software Engineering Excellence -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Software Engineering Excellence</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
                     <ul>
-                        <li>System purpose and business context</li>
-                        <li>Technical architecture and dependencies</li>
-                        <li>Data flows and integration points</li>
-                        <li>Authentication and authorisation patterns</li>
-                        <li>Deployment and operational procedures</li>
-                        <li>Known issues and improvement opportunities</li>
+                        <li>Technical Roadmap: Develop a comprehensive technical roadmap that balances immediate
+                            business needs with long-term architectural goals, focusing on the modernisation of
+                            legacy systems.</li>
+                        <li>Engineering Best Practices: Implement SOLID principles, domain-driven design, and clean
+                            architecture practices across all new development while gradually refactoring legacy
+                            code.</li>
+                        <li>Code Quality: Establish automated code quality gates, comprehensive code reviews, and
+                            pair programming sessions to ensure consistent quality standards.</li>
+                        <li>Architecture Governance: Create an architecture review board for critical system
+                            decisions, ensuring alignment with business strategy and technical standards.</li>
+                        <li>Dependency Management: Leverage GitHub's Dependabot and similar tools to automate
+                            dependency updates, ensuring security patches are applied promptly and reducing
+                            technical debt.</li>
+                        <li>Comprehensive Testing Strategy: Implement multi-layered testing including unit,
+                            integration, end-to-end, performance, security, and chaos engineering.</li>
+
+                        <li>Developer Experience: Create efficient development environments and tooling that reduce
+                            friction and accelerate delivery while maintaining quality standards.</li>
                     </ul>
                 </div>
-
-                <div class="template-spec">
-                    <h4>API Documentation Standard</h4>
+            </div>
+            <!-- System Integration & Platform Strategy -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>System Integration & Platform Strategy</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
                     <ul>
-                        <li>Endpoint specifications and examples</li>
-                        <li>Authentication requirements</li>
-                        <li>Rate limiting and error handling</li>
-                        <li>Data schemas and validation rules</li>
-                        <li>Testing procedures and mock data</li>
-                        <li>Versioning strategy</li>
+                        <li>API Strategy: Develop a comprehensive API strategy with standardised patterns for
+                            RESTful services, including versioning, documentation, and monitoring.</li>
+                        <li>Salesforce & Power Platform Integration: Create robust integration patterns between
+                            custom applications and Avidity's Salesforce, SharePoint, and Power Platform
+                            implementations.</li>
+                        <li>Service Contracts: Implement formal service contracts and API governance to ensure
+                            consistency and reliability across all integrations.</li>
+                        <li>Data Consistency: Establish data standardisation patterns and conflict resolution
+                            strategies to maintain consistency across distributed systems.</li>
                     </ul>
                 </div>
-
-                <div class="template-spec">
-                    <h4>Operational Runbook Format</h4>
+            </div>
+            <!-- DevOps & Delivery Excellence -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>DevOps & Delivery Excellence</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
                     <ul>
-                        <li>System health monitoring procedures</li>
-                        <li>Common troubleshooting steps</li>
-                        <li>Escalation procedures and contacts</li>
-                        <li>Deployment and rollback procedures</li>
-                        <li>Backup and recovery processes</li>
-                        <li>Performance tuning guidelines</li>
+                        <li>CI/CD Implementation: Build modern CI/CD pipelines using GitHub Actions and Azure DevOps
+                            with comprehensive automated testing.</li>
+                        <li>Deployment Automation: Implement zero-downtime deployments, automated rollback
+                            capabilities, and deployment approval workflows.</li>
+                        <li>Performance Metrics: Track and improve key metrics including deployment frequency, lead
+                            time, change failure rate, and MTTR.</li>
+                        <li>Environment Strategy: Establish consistent dev/test/staging/production environments with
+                            infrastructure-as-code for reproducibility.</li>
                     </ul>
                 </div>
-
-                <div class="template-spec">
-                    <h4>Security Assessment Framework</h4>
+            </div>
+            <!-- Environment Strategy & Infrastructure -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Environment Strategy & Infrastructure</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
                     <ul>
-                        <li>Access control and authentication review</li>
-                        <li>Data encryption and protection status</li>
-                        <li>Vulnerability assessment results</li>
-                        <li>Compliance requirement mapping</li>
-                        <li>Incident response procedures</li>
-                        <li>Remediation tracking and timelines</li>
+                        <li>Environment Standardisation: Implement clearly defined, consistent environments with
+                            specific purposes (local, dev, QA, staging, production).</li>
+                        <li>Specialised Environments: Purpose-built environments for AI/ML, data science, and
+                            security testing.</li>
+                        <li>Environment Parity: Ensure consistency across environments through IaC,
+                            configuration-as-code, and container orchestration.</li>
+                        <li>Environment Governance: Implement controls for environment management, access, cost, and
+                            compliance.</li>
                     </ul>
+                </div>
+            </div>
+            <!-- Azure Cloud-Native Architecture -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Azure Cloud-Native Architecture</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Cloud Migration: Lead the migration from on-premises or legacy hosting to Azure PaaS
+                            services using a phased approach.</li>
+                        <li>Serverless Architecture: Implement Azure Functions and Logic Apps for event-driven
+                            processing of EPOS data and field reports.</li>
+                        <li>Containerisation: Adopt container-based deployments for consistent environments and
+                            efficient resource utilisation.</li>
+                        <li>Cost optimisation: Implement cloud cost monitoring and optimisation strategies,
+                            including auto-scaling and right-sizing of resources.</li>
+                        <li>Azure Resource Manager Templates: Standardise infrastructure deployment using ARM
+                            templates for consistent, repeatable environment creation.</li>
+                        <li>Azure Policy: Implement governance guardrails with custom and built-in policies to
+                            enforce organisational standards and compliance requirements.</li>
+                        <li>Azure Cost Management: Utilise Cost Analysis tools to monitor spending patterns,
+                            implement budget alerts, and optimise resource allocation across environments.</li>
+                        <li>Azure Monitor & Application Insights: Deploy comprehensive monitoring for infrastructure
+                            health, application performance, and user experience metrics.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Azure Governance & Cost Management -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Azure Governance & Cost Management</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Azure Blueprints: Create standardised environment templates that combine Resource
+                            Manager templates, role assignments, and policy assignments for consistent deployment
+                            across subscriptions.</li>
+                        <li>Management Groups: Implement a hierarchical structure for organising subscriptions and
+                            applying governance controls at scale across the organisation.</li>
+                        <li>Azure Policy as Code: Manage policies through version-controlled configuration files,
+                            enabling automated policy deployment and compliance reporting.</li>
+                        <li>Resource Tagging Strategy: Develop a comprehensive tagging taxonomy for cost allocation,
+                            ownership tracking, and environment classification.</li>
+                        <li>Cost optimisation Framework: Implement a structured approach to cost management
+                            including reserved instances, auto-shutdown, right-sizing, and anomaly detection.</li>
+                        <li>Azure Advisor: Leverage recommendations for high availability, security, performance,
+                            and cost optimisation across all Azure resources.</li>
+                        <li>Governance Dashboards: Create custom Power BI dashboards for compliance status, cost
+                            trends, and resource utilisation across the organisation.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Data Engineering & Intelligence -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Data Engineering & Intelligence</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Data Standardisation: Implement common data formats, schemas, and taxonomies across all
+                            agencies to ensure consistency and interoperability.</li>
+                        <li>Database Strategy: Optimise database usage across MSSQL, PostgreSQL, and MySQL/MariaDB
+                            for efficient data storage, retrieval, and analysis.</li>
+                        <li>Data Pipelines: Implement efficient ETL processes using Azure Data Factory for EPOS data
+                            integration and analysis.</li>
+                        <li>Real-time Analytics: Build real-time data processing capabilities for immediate insights
+                            from field operations and sales data.</li>
+                        <li>Machine Learning: Develop predictive models for sales forecasting, inventory
+                            optimisation, and customer behavior analysis.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Security & Governance -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Security & Governance</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Secure SDLC: Implement security throughout the development lifecycle, including threat
+                            modeling and security code reviews.</li>
+                        <li>Authentication & Authorisation: Standardise on modern authentication protocols and
+                            implement proper role-based access control across all systems.</li>
+                        <li>Compliance: Ensure all systems meet GDPR, ISO 27001, and industry-specific compliance
+                            requirements.</li>
+                        <li>Security Automation: Implement automated security scanning in CI/CD pipelines and
+                            regular vulnerability assessments.</li>
+                        <li>Azure Key Vault: Centralise secret management using Azure Key Vault for secure storage
+                            of API keys, certificates, and connection strings.</li>
+                        <li>Azure Security Center: Deploy advanced threat protection with Security Center for
+                            continuous security assessment and actionable recommendations.</li>
+                        <li>Azure Sentinel: Implement SIEM capabilities for security information and event
+                            management across all Avidity systems.</li>
+                        <li>Azure Private Link: Secure data transfers with private endpoints to eliminate data
+                            exposure on the public internet.</li>
+                        <li>Azure Information Protection: Implement data classification and protection policies to
+                            secure sensitive information across the organisation.</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    </section>
+    <section id="execution">
+        <div class="section-header">
+            <h2>Execution</h2>
+            <p><strong>Purpose:</strong> Deliver improvements, measure results, and embed new practices for
+                sustainable success.</p>
+        </div>
+        <!-- Execution phase accordion and content -->
+        <div class="accordion">
+            <!-- Engineering Team Development -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Engineering Team Development</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Team Structure: Organise engineering teams around business domains and technical
+                            capabilities to maximize autonomy and ownership.</li>
+                        <li>Skills Development: Create a comprehensive training program covering both legacy systems
+                            and modern technologies.</li>
+                        <li>Career Progression: Establish clear engineering career paths with defined competencies
+                            and growth opportunities.</li>
+                        <li>Engineering Culture: Foster a culture of innovation, continuous learning, and technical
+                            excellence through hackathons, knowledge sharing sessions, and communities of practice.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- People Leadership & Team Culture -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>People Leadership & Team Culture</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Talent Development: Implement personalised growth plans for each team member, focusing
+                            on both technical skills and leadership capabilities.</li>
+                        <li>Inclusive Team Building: Create a diverse and inclusive engineering culture where
+                            different perspectives are valued and everyone feels empowered to contribute.</li>
+                        <li>Mentorship Program: Establish formal mentoring relationships between senior and junior
+                            engineers to accelerate knowledge transfer and professional development.</li>
+                        <li>Psychological Safety: Foster an environment where team members feel safe to take risks,
+                            share ideas, and learn from failures without fear of criticism.</li>
+                        <li>Recognition & Feedback: Implement regular feedback cycles and meaningful recognition
+                            systems to celebrate achievements and support continuous improvement.</li>
+                        <li>Work-Life Balance: Promote sustainable working practices that prevent burnout and
+                            support long-term wellbeing and productivity.</li>
+                        <li>External Networking & Community Engagement: Develop strong external connections to
+                            benefit the team and Organisation (conferences, universities, open source, etc.).</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Communication & Change Management -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Communication & Change Management</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Stakeholder Engagement: Build strong relationships across product, business, security,
+                            and operations teams to ensure alignment and buy-in for engineering initiatives.</li>
+                        <li>Technical Translation: Effectively communicate complex technical concepts to
+                            non-technical stakeholders, translating engineering work into business value.</li>
+                        <li>Change Leadership: Guide teams through technological transitions with clear vision,
+                            empathy, and practical support.</li>
+                        <li>Transparent Communication: Maintain open and honest communication about project status,
+                            challenges, and decisions to build trust across the Organisation.</li>
+                        <li>Cross-functional Collaboration: Facilitate productive partnerships between engineering
+                            and other departments to deliver integrated solutions that meet business needs.</li>
+                        <li>Executive Reporting: Provide clear, concise updates to senior leadership that highlight
+                            progress, risks, and strategic opportunities.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Modern Practices & Tools</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Promote high standards of pair programming, test-driven development, and knowledge
+                            sharing.</li>
+                        <li>Foster a curious, supportive environment for open discussion and continuous improvement.
+                        </li>
+                        <li>Introduce modern AI tools and platforms such as Claude, GitHub Copilot, Cursor, MCP
+                            servers, n8n, Goose, Power Automate, and Ollama (local LLMs).</li>
+                        <li>Encourage learning about Retrieval-Augmented Generation (RAG) and other cutting-edge
+                            technologies.</li>
+                        <li>Establish an online shared space for uploading, discussing, and learning from
+                            interesting content as a team.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Benchmarks & Compliance Standards</h3>
+                    <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Accessibility:</strong> Meet or exceed WCAG 2.1/2.2 standards for digital
+                            accessibility.</li>
+                        <li><strong>GDPR & Data Privacy:</strong> Ensure all systems and processes are compliant
+                            with GDPR and other relevant data protection laws.</li>
+                        <li><strong>Security Compliance:</strong> Adhere to ISO 27001, SOC 2, and OWASP Top 10 best
+                            practices.</li>
+                        <li><strong>Code Quality:</strong> Maintain high standards for code review, static analysis,
+                            and automated test coverage.</li>
+                        <li><strong>Performance:</strong> Track and improve system performance, uptime, and response
+                            times.</li>
+                        <li><strong>DevOps Maturity:</strong> Monitor deployment frequency, lead time, change
+                            failure rate, and MTTR.</li>
+                        <li><strong>Documentation:</strong> Keep technical and process documentation current and
+                            accessible.</li>
+                        <li><strong>Sustainability:</strong> Consider energy efficiency and green IT practices in
+                            system design and operations.</li>
+                        <li><strong>Diversity & Inclusion:</strong> Foster a diverse, inclusive, and equitable
+                            engineering culture.</li>
+                        <li><strong>User Satisfaction:</strong> Track user feedback, NPS, and support metrics to
+                            drive continuous improvement.</li>
+                    </ul>
+                    <p>
+                        <em>These benchmarks will be regularly assessed and used to drive continuous improvement
+                            across the organisation.</em>
+                    </p>
                 </div>
             </div>
         </div>
+        <!-- Leadership Attributes and Technical Skills Alignment -->
 
-        <!-- Add this to define your dashboard approach -->
-        <div class="dashboard-specifications">
-            <h3>System Health Dashboard Design</h3>
-            <p>I will implement comprehensive monitoring dashboards that provide visibility into system performance,
-                security, and business impact.</p>
 
-            <div class="dashboard-categories">
-                <div class="dashboard-type">
-                    <h4>Operational Health Dashboard</h4>
-                    <ul>
-                        <li><strong>System Availability:</strong> Uptime percentages for critical systems</li>
-                        <li><strong>Performance Metrics:</strong> Response times, throughput, error rates</li>
-                        <li><strong>Resource Utilisation:</strong> CPU, memory, storage across environments</li>
-                        <li><strong>Background Processes:</strong> Job queue health, batch processing status</li>
-                    </ul>
-                </div>
-
-                <div class="dashboard-type">
-                    <h4>Security & Compliance Dashboard</h4>
-                    <ul>
-                        <li><strong>Authentication Monitoring:</strong> Failed login attempts, unusual access patterns
-                        </li>
-                        <li><strong>Vulnerability Tracking:</strong> Security scan results, patch status</li>
-                        <li><strong>Compliance Metrics:</strong> GDPR, ISO 27001 adherence scores</li>
-                        <li><strong>Audit Trail:</strong> Data access logs, system changes</li>
-                    </ul>
-                </div>
-
-                <div class="dashboard-type">
-                    <h4>Engineering Productivity Dashboard</h4>
-                    <ul>
-                        <li><strong>Deployment Metrics:</strong> Frequency, success rate, rollback frequency</li>
-                        <li><strong>Code Quality:</strong> Test coverage, static analysis scores, technical debt</li>
-                        <li><strong>Development Velocity:</strong> Feature delivery time, code review cycle time</li>
-                        <li><strong>Team Health:</strong> On-call burden, work-life balance indicators</li>
-                    </ul>
-                </div>
-
-                <div class="dashboard-type">
-                    <h4>Business Impact Dashboard</h4>
-                    <ul>
-                        <li><strong>Data Processing:</strong> EPOS data pipeline health and latency</li>
-                        <li><strong>Client Delivery:</strong> Report generation time, data accuracy metrics</li>
-                        <li><strong>Field Operations:</strong> Mobile app performance, offline sync status</li>
-                        <li><strong>Cost Management:</strong> Infrastructure costs, optimisation opportunities</li>
-                    </ul>
-                </div>
-            </div>
+        <!-- System Mapping Preview (available later) -->
+        <div style="margin-top:2rem;">
+            <p>
+                <strong>Preview:</strong> As an example, see how <a
+                    href="https://wellis321.github.io/org-playbook/systems/identity" target="_blank"
+                    rel="noopener">Identity Management</a> is documented—Avidity’s systems will be mapped and
+                documented in a similar, transparent, and actionable way as the work progresses.
+            </p>
         </div>
-        <div class="security-audit-checkpoints">
-            <h3>Security Audit Checkpoints</h3>
-            <p>A systematic approach to assessing and improving security across Avidity's systems and agencies.</p>
+    </section>
 
-            <div class="security-phases">
-                <div class="security-phase">
-                    <h4>🔍 Discovery Phase Security Assessment</h4>
-                    <ul>
-                        <li><strong>Authentication Audit:</strong> Review SSO implementation and consistency across
-                            agencies</li>
-                        <li><strong>Access Control Review:</strong> Assess user permissions and role-based access
-                            patterns</li>
-                        <li><strong>Data Classification:</strong> Identify sensitive data types (EPOS, client data, PII)
-                        </li>
-                        <li><strong>Network Security:</strong> Map network topology and identify security boundaries
-                        </li>
-                        <li><strong>Application Security:</strong> Review API security, input validation, output
-                            encoding</li>
-                        <li><strong>Infrastructure Security:</strong> Assess cloud configuration and hardening status
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="security-phase">
-                    <h4>🔒 Immediate Security Actions</h4>
-                    <ul>
-                        <li><strong>Vulnerability Scanning:</strong> Automated scanning of applications and
-                            infrastructure</li>
-                        <li><strong>Dependency Analysis:</strong> Review third-party libraries and update policies</li>
-                        <li><strong>Backup Verification:</strong> Test backup systems and recovery procedures</li>
-                        <li><strong>Incident Response:</strong> Review current incident response procedures</li>
-                        <li><strong>Compliance Mapping:</strong> Assess GDPR, ISO 27001, and client security
-                            requirements</li>
-                        <li><strong>Security Training:</strong> Evaluate team security awareness and training needs</li>
-                    </ul>
-                </div>
-
-                <div class="security-phase">
-                    <h4>📋 Ongoing Security Monitoring</h4>
-                    <ul>
-                        <li><strong>Security Metrics:</strong> Establish baseline security KPIs and monitoring</li>
-                        <li><strong>Threat Detection:</strong> Implement security event monitoring and alerting</li>
-                        <li><strong>Regular Assessments:</strong> Schedule periodic security reviews and penetration
-                            testing</li>
-                        <li><strong>Security Culture:</strong> Embed security practices into development workflows</li>
-                        <li><strong>Vendor Security:</strong> Assess third-party service security postures</li>
-                        <li><strong>Continuous Improvement:</strong> Regular security posture reviews and updates</li>
-                    </ul>
-                </div>
-            </div>
+    <section id="standards-improvements">
+        <div class="page-header">
+            <h2 class="page-title">Easy to Implement Standards and Improvements</h2>
         </div>
+        <ul style="margin-left: 1rem; color: #5a6c7d;">
+            <li>Use Dependabot and Snyk for dependency and vulnerability management</li>
+            <li>Set up Sentry and Application Insights for real-time monitoring and alerting</li>
+            <li>Adopt AI-assisted testing and linting to improve speed, quality, and consistency</li>
+            <li>Standardize GitHub Actions YAML templates for consistent CI/CD pipelines</li>
+            <li>Apply Azure Policy and Blueprints to enforce regulatory compliance and governance by design</li>
+            <li>Utilise cost and resource auditing tools in Azure to track, report, and optimize infrastructure
+                usage</li>
+            <li>Implement Infrastructure as Code (IaC) practices to version, standardise, and scale environments
+            </li>
+        </ul>
+    </section>
 
-        <!-- Add this to show field team productivity focus -->
-        <div class="field-productivity-enhancement">
-            <h3>Field Team Productivity Enhancement Strategy</h3>
-            <p>Engineering improvements that directly support field operations and business outcomes.</p>
+    <div class="documentation-specifications">
+        <h3>Documentation Templates & Standards</h3>
+        <p>I will create standardised templates that can be applied consistently across all of Avidity's systems and
+            agencies.</p>
 
-            <div class="productivity-areas">
-                <h4>Technology Improvements for Field Operations:</h4>
+        <div class="template-grid">
+            <div class="template-spec">
+                <h4>System Architecture Template</h4>
                 <ul>
-                    <li><strong>Data Access Optimisation:</strong> Faster, more reliable access to EPOS insights and
-                        store data</li>
-                    <li><strong>Mobile Experience:</strong> Improved mobile applications with better offline
-                        capabilities</li>
-                    <li><strong>Real-time Synchronisation:</strong> Seamless data sync between field teams and central
-                        systems</li>
-                    <li><strong>Automated Reporting:</strong> Reduce manual data entry and streamline client reporting
-                    </li>
-                    <li><strong>Performance Analytics:</strong> Better tracking and measurement of field team
-                        effectiveness</li>
-                    <li><strong>Integration Efficiency:</strong> Smoother data flows between client systems and field
-                        operations</li>
+                    <li>System purpose and business context</li>
+                    <li>Technical architecture and dependencies</li>
+                    <li>Data flows and integration points</li>
+                    <li>Authentication and authorisation patterns</li>
+                    <li>Deployment and operational procedures</li>
+                    <li>Known issues and improvement opportunities</li>
                 </ul>
+            </div>
 
-                <div class="measurement-approach">
-                    <h4>How We'll Measure Success:</h4>
-                    <ul>
-                        <li>Time from data insight to field action</li>
-                        <li>Mobile app performance and reliability metrics</li>
-                        <li>Field team satisfaction with technology tools</li>
-                        <li>Data accuracy and completeness in field reports</li>
-                        <li>Client delivery timeliness and quality</li>
-                        <li>System uptime during critical business hours</li>
-                    </ul>
-                </div>
+            <div class="template-spec">
+                <h4>API Documentation Standard</h4>
+                <ul>
+                    <li>Endpoint specifications and examples</li>
+                    <li>Authentication requirements</li>
+                    <li>Rate limiting and error handling</li>
+                    <li>Data schemas and validation rules</li>
+                    <li>Testing procedures and mock data</li>
+                    <li>Versioning strategy</li>
+                </ul>
+            </div>
+
+            <div class="template-spec">
+                <h4>Operational Runbook Format</h4>
+                <ul>
+                    <li>System health monitoring procedures</li>
+                    <li>Common troubleshooting steps</li>
+                    <li>Escalation procedures and contacts</li>
+                    <li>Deployment and rollback procedures</li>
+                    <li>Backup and recovery processes</li>
+                    <li>Performance tuning guidelines</li>
+                </ul>
+            </div>
+
+            <div class="template-spec">
+                <h4>Security Assessment Framework</h4>
+                <ul>
+                    <li>Access control and authentication review</li>
+                    <li>Data encryption and protection status</li>
+                    <li>Vulnerability assessment results</li>
+                    <li>Compliance requirement mapping</li>
+                    <li>Incident response procedures</li>
+                    <li>Remediation tracking and timelines</li>
+                </ul>
             </div>
         </div>
-        <!-- Moved Field Team Operations Discovery section here -->
-        <div class="field-team-discovery">
-            <h3>Field Team Operations Discovery</h3>
-            <p>Understanding how field teams currently receive, process, and act on insights is crucial for
-                engineering improvements that directly impact business outcomes.</p>
-            <h4>Discovery Questions:</h4>
+    </div>
+
+    <!-- Add this to define your dashboard approach -->
+    <div class="dashboard-specifications">
+        <h3>System Health Dashboard Design</h3>
+        <p>I will implement comprehensive monitoring dashboards that provide visibility into system performance,
+            security, and business impact.</p>
+
+        <div class="dashboard-categories">
+            <div class="dashboard-type">
+                <h4>Operational Health Dashboard</h4>
+                <ul>
+                    <li><strong>System Availability:</strong> Uptime percentages for critical systems</li>
+                    <li><strong>Performance Metrics:</strong> Response times, throughput, error rates</li>
+                    <li><strong>Resource Utilisation:</strong> CPU, memory, storage across environments</li>
+                    <li><strong>Background Processes:</strong> Job queue health, batch processing status</li>
+                </ul>
+            </div>
+
+            <div class="dashboard-type">
+                <h4>Security & Compliance Dashboard</h4>
+                <ul>
+                    <li><strong>Authentication Monitoring:</strong> Failed login attempts, unusual access patterns
+                    </li>
+                    <li><strong>Vulnerability Tracking:</strong> Security scan results, patch status</li>
+                    <li><strong>Compliance Metrics:</strong> GDPR, ISO 27001 adherence scores</li>
+                    <li><strong>Audit Trail:</strong> Data access logs, system changes</li>
+                </ul>
+            </div>
+
+            <div class="dashboard-type">
+                <h4>Engineering Productivity Dashboard</h4>
+                <ul>
+                    <li><strong>Deployment Metrics:</strong> Frequency, success rate, rollback frequency</li>
+                    <li><strong>Code Quality:</strong> Test coverage, static analysis scores, technical debt</li>
+                    <li><strong>Development Velocity:</strong> Feature delivery time, code review cycle time</li>
+                    <li><strong>Team Health:</strong> On-call burden, work-life balance indicators</li>
+                </ul>
+            </div>
+
+            <div class="dashboard-type">
+                <h4>Business Impact Dashboard</h4>
+                <ul>
+                    <li><strong>Data Processing:</strong> EPOS data pipeline health and latency</li>
+                    <li><strong>Client Delivery:</strong> Report generation time, data accuracy metrics</li>
+                    <li><strong>Field Operations:</strong> Mobile app performance, offline sync status</li>
+                    <li><strong>Cost Management:</strong> Infrastructure costs, optimisation opportunities</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="security-audit-checkpoints">
+        <h3>Security Audit Checkpoints</h3>
+        <p>A systematic approach to assessing and improving security across Avidity's systems and agencies.</p>
+
+        <div class="security-phases">
+            <div class="security-phase">
+                <h4>🔍 Discovery Phase Security Assessment</h4>
+                <ul>
+                    <li><strong>Authentication Audit:</strong> Review SSO implementation and consistency across
+                        agencies</li>
+                    <li><strong>Access Control Review:</strong> Assess user permissions and role-based access
+                        patterns</li>
+                    <li><strong>Data Classification:</strong> Identify sensitive data types (EPOS, client data, PII)
+                    </li>
+                    <li><strong>Network Security:</strong> Map network topology and identify security boundaries
+                    </li>
+                    <li><strong>Application Security:</strong> Review API security, input validation, output
+                        encoding</li>
+                    <li><strong>Infrastructure Security:</strong> Assess cloud configuration and hardening status
+                    </li>
+                </ul>
+            </div>
+
+            <div class="security-phase">
+                <h4>🔒 Immediate Security Actions</h4>
+                <ul>
+                    <li><strong>Vulnerability Scanning:</strong> Automated scanning of applications and
+                        infrastructure</li>
+                    <li><strong>Dependency Analysis:</strong> Review third-party libraries and update policies</li>
+                    <li><strong>Backup Verification:</strong> Test backup systems and recovery procedures</li>
+                    <li><strong>Incident Response:</strong> Review current incident response procedures</li>
+                    <li><strong>Compliance Mapping:</strong> Assess GDPR, ISO 27001, and client security
+                        requirements</li>
+                    <li><strong>Security Training:</strong> Evaluate team security awareness and training needs</li>
+                </ul>
+            </div>
+
+            <div class="security-phase">
+                <h4>📋 Ongoing Security Monitoring</h4>
+                <ul>
+                    <li><strong>Security Metrics:</strong> Establish baseline security KPIs and monitoring</li>
+                    <li><strong>Threat Detection:</strong> Implement security event monitoring and alerting</li>
+                    <li><strong>Regular Assessments:</strong> Schedule periodic security reviews and penetration
+                        testing</li>
+                    <li><strong>Security Culture:</strong> Embed security practices into development workflows</li>
+                    <li><strong>Vendor Security:</strong> Assess third-party service security postures</li>
+                    <li><strong>Continuous Improvement:</strong> Regular security posture reviews and updates</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this to show field team productivity focus -->
+    <div class="field-productivity-enhancement">
+        <h3>Field Team Productivity Enhancement Strategy</h3>
+        <p>Engineering improvements that directly support field operations and business outcomes.</p>
+
+        <div class="productivity-areas">
+            <h4>Technology Improvements for Field Operations:</h4>
             <ul>
-                <li>How do field teams currently receive EPOS data insights and store visit priorities?</li>
-                <li>What mobile tools and applications are in use across different agencies?</li>
-                <li>How is real-time feedback captured from field operations?</li>
-                <li>What data flows from field teams back to central systems and client reporting?</li>
-                <li>Where are the current bottlenecks between data insight and field action?</li>
-                <li>How do offline capabilities work for field teams in remote locations?</li>
+                <li><strong>Data Access Optimisation:</strong> Faster, more reliable access to EPOS insights and
+                    store data</li>
+                <li><strong>Mobile Experience:</strong> Improved mobile applications with better offline
+                    capabilities</li>
+                <li><strong>Real-time Synchronisation:</strong> Seamless data sync between field teams and central
+                    systems</li>
+                <li><strong>Automated Reporting:</strong> Reduce manual data entry and streamline client reporting
+                </li>
+                <li><strong>Performance Analytics:</strong> Better tracking and measurement of field team
+                    effectiveness</li>
+                <li><strong>Integration Efficiency:</strong> Smoother data flows between client systems and field
+                    operations</li>
             </ul>
-            <div class="outcome-focus">
-                <strong>Goal:</strong> Map current field operations technology to identify opportunities for
-                productivity improvements and better data-driven decision making.
+
+            <div class="measurement-approach">
+                <h4>How We'll Measure Success:</h4>
+                <ul>
+                    <li>Time from data insight to field action</li>
+                    <li>Mobile app performance and reliability metrics</li>
+                    <li>Field team satisfaction with technology tools</li>
+                    <li>Data accuracy and completeness in field reports</li>
+                    <li>Client delivery timeliness and quality</li>
+                    <li>System uptime during critical business hours</li>
+                </ul>
             </div>
         </div>
+    </div>
+    <!-- Moved Field Team Operations Discovery section here -->
+    <div class="field-team-discovery">
+        <h3>Field Team Operations Discovery</h3>
+        <p>Understanding how field teams currently receive, process, and act on insights is crucial for
+            engineering improvements that directly impact business outcomes.</p>
+        <h4>Discovery Questions:</h4>
+        <ul>
+            <li>How do field teams currently receive EPOS data insights and store visit priorities?</li>
+            <li>What mobile tools and applications are in use across different agencies?</li>
+            <li>How is real-time feedback captured from field operations?</li>
+            <li>What data flows from field teams back to central systems and client reporting?</li>
+            <li>Where are the current bottlenecks between data insight and field action?</li>
+            <li>How do offline capabilities work for field teams in remote locations?</li>
+        </ul>
+        <div class="outcome-focus">
+            <strong>Goal:</strong> Map current field operations technology to identify opportunities for
+            productivity improvements and better data-driven decision making.
+        </div>
+    </div>
 
-        <section id="metrics">
-            <div class="section-header">
-                <h2>Success Metrics</h2>
-                <p>Tracking engineering effectiveness, quality, and business value.</p>
+    <section id="metrics">
+        <div class="section-header">
+            <h2>Success Metrics</h2>
+            <p>Tracking engineering effectiveness, quality, and business value.</p>
+        </div>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Deployment Frequency</h3>
+                <p>Daily deployments with <5% failure rate.</p>
             </div>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Deployment Frequency</h3>
-                    <p>Daily deployments with <5% failure rate.</p>
-                </div>
-                <div class="card">
-                    <h3>System Uptime</h3>
-                    <p>99.9% uptime and <2hr mean time to recovery.</p>
-                </div>
-                <div class="card">
-                    <h3>Code Quality</h3>
-                    <p>90%+ automated test coverage, <20% tech debt ratio.</p>
-                </div>
-                <div class="card">
-                    <h3>Team Health</h3>
-                    <p>Quarterly surveys, career progression, and mentorship participation.</p>
-                </div>
+            <div class="card">
+                <h3>System Uptime</h3>
+                <p>99.9% uptime and <2hr mean time to recovery.</p>
             </div>
-        </section>
+            <div class="card">
+                <h3>Code Quality</h3>
+                <p>90%+ automated test coverage, <20% tech debt ratio.</p>
+            </div>
+            <div class="card">
+                <h3>Team Health</h3>
+                <p>Quarterly surveys, career progression, and mentorship participation.</p>
+            </div>
+        </div>
+    </section>
     </div>
 
     <button id="back-to-top" title="Back to Top" aria-label="Back to Top">&#8679;</button>
